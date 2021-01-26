@@ -1,7 +1,25 @@
 
 
+function soma(n1, n2){
+    return n1 + n2;
+}
+
+function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome);
+}
+
+alert(soma(5, 10));
+alert(setReplace("Vai Japão", "Japão", "Brasil"));
+
+var teste = 0;
+test = "ola";
+teste = true;
+console.log(teste);
+
+/*
 var d = new Date();
 alert(d.getMonth() + 1); //retorna o mês menos 1, assim tem que somar +1 para vir o correto
+*/
 
 /*
 var cont;
@@ -27,7 +45,7 @@ if (idade >= 18) {
 /*
 var frutas = [{nome:"maça", cor: "vermelha"}, {nome:"uva", cor: "roxa"}];
 console.log(frutas);
-console.log(frutas[1].nome);
+console.log(frutas[1]);
 */
 
 /* 
