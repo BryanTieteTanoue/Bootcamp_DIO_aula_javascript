@@ -1,5 +1,40 @@
 
 
+function clicou(){   
+    //innerHTML permite colocar textos, usando até as modificações do HTML
+    document.getElementById("agradecimento"). innerHTML = "<b>Obrigado por clicar</b>"
+    //console.log(document.getElementById("agradecimento"));
+}
+
+function redirecionar(){
+    //abre uma nova guia com o endereço inserido
+    window.open("https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjQ_NTv07nuAhVGK7kGHSI5ANUQPAgI");
+    //abre na mesma guia
+    window.location.href ="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjQ_NTv07nuAhVGK7kGHSI5ANUQPAgI";
+}
+
+function trocar(elemento){
+    //passando parãmetro "elemento" a função não fica presa a apenas um lugar
+    //document.getElementById("passar").innerHTML ="Obrigado por passar o mouse";
+    elemento.innerHTML = "Obrigado por passar o mouse";
+}
+
+function voltar(elemento){
+    //passando parãmetro "elemento" a função não fica presa a apenas um lugar
+    //document.getElementById("passar").innerHTML = "Passe o mouse aqui";
+    elemento.innerHTML = "Passe o mouse aqui";
+}
+
+function load(){
+    alert("Página carrregada");
+}
+
+function funcaoChange(elemento){
+    //".value" pega o valor que está dentro do elemento
+    console.log(elemento.value);
+}
+
+/*
 function soma(n1, n2){
     return n1 + n2;
 }
@@ -11,11 +46,12 @@ function setReplace(frase, nome, novo_nome){
 alert(soma(5, 10));
 alert(setReplace("Vai Japão", "Japão", "Brasil"));
 
+//js é linguagem de tipo dinâmico
 var teste = 0;
 test = "ola";
 teste = true;
 console.log(teste);
-
+*/
 /*
 var d = new Date();
 alert(d.getMonth() + 1); //retorna o mês menos 1, assim tem que somar +1 para vir o correto
